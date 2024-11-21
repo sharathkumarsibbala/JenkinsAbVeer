@@ -2,7 +2,7 @@ pipeline {
   agent {
     // for this docker agent, we need to install 'Docker Pipeline' plugin in jenkins
     docker {
-      image 'sharathkumar0498/maven-sharath-docker-agent:v1'
+      image 'sharathkumarsibbala/maven-sharath-docker-agent:v1'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
